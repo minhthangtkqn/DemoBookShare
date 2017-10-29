@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>USER</title>
+    <link rel="stylesheet" href="bootstraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/user_detail.css">
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="images/logobook.png" alt="" style="height: 100%; width: 100%" /></a>
+                </div>
+
+                <div id="credentials">
+                    <ul class="">
+                        <li><a href="#"><i class="fa fa-user"></i> Dang ky</a></li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <li><a href="#"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BODY -->
+        <div id="page-body" class="container">
+            <br><br>
+
+            <div class="body-row">
+
+                <p class="info-title w3-red">
+                    <b>THÔNG TIN CHI TIẾT</b>
+                </p>
+                <div class="img_user">
+                    <!-- <bean:define id="anh" name="nd" property="anh"></bean:define>-->
+                    <img style="height: 100%; width: 100%;" src="${anh}">
+                </div>
+
+                <div class="form-horizontal info_user_left">
+                    <div class="form-group">
+                        <label for="account" class="col-sm-4 control-label">Account</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="account" value="minhthangtkqn" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name" class="col-sm-4 control-label">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" value="Hoang Minh Thang" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" class="col-sm-4 control-label">Gender</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="gender" value="Male" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthday" class="col-sm-4 control-label">Birthday</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="birthday" value="1995" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-4 control-label">Phone number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="phone" value="0123456789" disabled>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="form-horizontal info_user_right">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-4 control-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="email" value="abcxyz@123.com" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="region" class="col-sm-4 control-label">Region</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="region" value="Da Nang" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note" class="col-sm-4 control-label">Note</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="note" value="" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status" class="col-sm-4 control-label">Status</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="status" value="Normal" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- <bean:define id="maNguoiDung" name="nguoiDungForm" property="maNguoiDung"></bean:define> -->
+                    <div class="form-group">
+                        <form action="mo-khoa-nguoi-dung.do" method="post">
+                            <input type="text" name="maNguoiDung" value="${maNguoiDung}" style="display: none;">
+                            <div class="col-sm-12">
+                                <input class="form-control" type="text" name="ghiChu">
+                                <input type="submit" name="submit" value="MỞ KHÓA" class="w3-btn w3-ripple w3-red form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <form action="khoa-nguoi-dung.do" method="post">
+                            <input type="text" name="maNguoiDung" value="${maNguoiDung}" style="display: none;">
+                            <div class="col-sm-12">
+                                <input class="form-control" type="text" name="ghiChu">
+                                <input class="w3-btn w3-ripple w3-red form-control" type="submit" name="submit" value="KHÓA">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+            
+        </div>
+        <!-- END BODY -->
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- SCRIPT -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- END SCRIPT -->
+
+    </div>
+
+</body>
+
+</html>

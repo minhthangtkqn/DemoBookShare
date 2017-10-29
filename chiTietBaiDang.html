@@ -3,19 +3,17 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>INDEX</title>
+    <title>USER</title>
     <link rel="stylesheet" href="bootstraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/product_detail.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-        });
-    </script>
 </head>
 
 <body>
@@ -28,7 +26,7 @@
 
                 <div id="credentials">
                     <ul class="">
-                        <li><a href="#"><i class="fa fa-user"></i> Đăng ký</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i> Dang ky</a></li>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <li><a href="#"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                     </ul>
@@ -37,92 +35,88 @@
         </div>
 
         <div id="page-body" class="container">
+            <br><br><br>
 
             <div class="body-row">
-                <div class="search">
-                    <form action="" class="search-form">
-                        <input class="search-input search-item" type="text" placeholder="Bạn muốn tìm sản phẩm gì?">
-                        <button class="search-button search-item" type="submit">X</button>
-                    </form>
+                <div class="w3-content product-img-slides">
+                    <img class="mySlides" src="images/img_nature_wide.jpg" style="width:100%">
+                    <img class="mySlides" src="images/img_fjords_wide.jpg" style="width:100%">
+                    <img class="mySlides" src="images/img_mountains_wide.jpg" style="width:100%">
+                    <img class="mySlides" src="images/img_fjords_wide.jpg" style="width:100%">
+                    <img class="mySlides" src="images/img_mountains_wide.jpg" style="width:100%">
 
-                    <select name="danh-muc">
-                        <option value="1">Tieu thuyet</option>
-                        <option value="2">Sach giao khoa lop 1</option>
-                        <option value="3">Truyen trinh tham</option>
-                    </select>
-
-                    <select name="tinh-thanh">
-                        <option value="1">Da Nang</option>
-                        <option value="2">Ha Noi</option>
-                        <option value="3">TP Ho Chi Minh</option>
-                    </select>
-
-                    <select name="loc-gia">
-                        <option value="1">Gia thap truoc</option>
-                        <option value="2">Gia cao truoc</option>
-                    </select>
-                </div>
-
-                <div id="goi-y">
-                    <p> Vai goi y cho nguoi xem de tim duoc san pham mong muon</p>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <p style="font-size: 18px;">20 trong tong so 1234 ket qua</p>
-            </div>
-
-            <div class="body-row">
-                <div class="books">
-
-                    <div class="box">
-                        <div class="sp">
-                            <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
-                            <h4 class="ten-sach">
-                                <b>Hai van dam duoi day bien tac gia mario puzo bien tac gia mario puzo</b>
-                            </h4>
-                            <p class="tac-gia">Tac gia</p>
-                            <h4 class="gia-tien">
-                                <b>Gia tien</b>
-                            </h4>
+                    <div class="w3-row-padding w3-section">
+                        <div class="tiny-img">
+                            <img class="w3-opacity w3-hover-opacity-off" src="images/img_nature_wide.jpg" onclick="currentDiv(1)">
                         </div>
-
-                        <div class="sp">
-                            <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
-                            <h4 class="ten-sach">
-                                <b>Hai van dam duoi day bien tac gia mario puzo bien tac gia mario puzo</b>
-                            </h4>
-                            <p class="tac-gia">Tac gia</p>
-                            <h4 class="gia-tien">
-                                <b>Gia tien</b>
-                            </h4>
+                        <div class="tiny-img">
+                            <img class="w3-opacity w3-hover-opacity-off" src="images/img_fjords_wide.jpg" onclick="currentDiv(2)">
                         </div>
-                        <div class="sp">
-                            <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
-                            <h4 class="ten-sach">
-                                <b>Hai van dam duoi day bien tac gia mario puzo bien tac gia mario puzo</b>
-                            </h4>
-                            <p class="tac-gia">Tac gia</p>
-                            <h4 class="gia-tien">
-                                <b>Gia tien</b>
-                            </h4>
+                        <div class="tiny-img">
+                            <img class="w3-opacity w3-hover-opacity-off" src="images/img_mountains_wide.jpg" onclick="currentDiv(3)">
                         </div>
-                        <div class="sp">
-                            <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
-                            <h4 class="ten-sach">
-                                <b>Hai van dam duoi day bien tac gia mario puzo bien tac gia mario puzo</b>
-                            </h4>
-                            <p class="tac-gia">Tac gia</p>
-                            <h4 class="gia-tien">
-                                <b>Gia tien</b>
-                            </h4>
+                        <div class="tiny-img">
+                            <img class="w3-opacity w3-hover-opacity-off" src="images/img_fjords_wide.jpg" onclick="currentDiv(4)">
+                        </div>
+                        <div class="tiny-img">
+                            <img class="w3-opacity w3-hover-opacity-off" src="images/img_mountains_wide.jpg" onclick="currentDiv(5)">
                         </div>
                     </div>
                 </div>
 
-                <br><br><br>
-                <p>Goi y</p>
+                <div class="product-info">
+                    <h2 class="info-title">
+                        <b>THÔNG TIN SÁCH</b>
+                    </h2>
 
+                    <h3 style="color: red">
+                        <b></b>
+                    </h3>
+
+                    <p>Tác giả: </p>
+                    <p>Danh mục: </p>
+                    <p>Nhà xuất bản: </p>
+                    <p>Năm xuất bản: </p>
+                    <p>Ngày đăng bán: </p>
+                    <p>Tỉnh thành: </p>
+
+                    <p style="color: red; font-size: 20px">
+                        <b>Giá: </b>
+                    </p>
+                </div>
+
+                <div class="thongtin_nguoiban">
+                    <h2 class="info-title">
+                        <b>THÔNG TIN NGUOI BAN</b>
+                    </h2>
+                    <div class="anh_nguoiban">
+                        <!--                        <bean:define id="anhNguoiBan" name="chiTietBaiDang" property="anhNguoiBan"></bean:define>-->
+                        <img style="height: 200px; width: 200px;" src="">
+                    </div>
+                    <div class="text_info">
+                        <p>Tài khoản:
+                            <!--                            <bean:write name="chiTietBaiDang" property="taiKhoanNguoiBan" />-->
+                        </p>
+
+                        <p>
+                            Tên người bán:
+                            <!--                            <bean:write name="chiTietBaiDang" property="hoTenNguoiBan" />-->
+                        </p>
+
+                        <p>Giới tính:
+                            <!--                            <bean:write name="chiTietBaiDang" property="gioiTinh" />-->
+                        </p>
+                        <p>Năm sinh:
+                            <!--                            <bean:write name="chiTietBaiDang" property="namSinhNguoiBan" />-->
+                        </p>
+                    </div>
+                    <a href="mua-sach.do" class="w3-btn w3-ripple w3-red btn-hoi-mua">Hỏi Mua</a>
+                </div>
+
+                <br>
+            </div>
+
+            <div class="body-row">
                 <div class="books">
                     <div class="owl-carousel owl-theme">
                         <div class="sp">
@@ -135,7 +129,7 @@
                                 <b>Gia tien</b>
                             </h4>
                         </div>
-                        
+
                         <div class="sp">
                             <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
                             <h4 class="ten-sach">
@@ -146,7 +140,7 @@
                                 <b>Gia tien</b>
                             </h4>
                         </div>
-                        
+
                         <div class="sp">
                             <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
                             <h4 class="ten-sach">
@@ -157,7 +151,7 @@
                                 <b>Gia tien</b>
                             </h4>
                         </div>
-                        
+
                         <div class="sp">
                             <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
                             <h4 class="ten-sach">
@@ -168,7 +162,7 @@
                                 <b>Gia tien</b>
                             </h4>
                         </div>
-                        
+
                         <div class="sp">
                             <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
                             <h4 class="ten-sach">
@@ -179,7 +173,7 @@
                                 <b>Gia tien</b>
                             </h4>
                         </div>
-                        
+
                         <div class="sp">
                             <a href="#"><img src="images/No-image.jpg" class="w3-hover-opacity"></a>
                             <h4 class="ten-sach">
@@ -193,6 +187,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- FOOTER -->
@@ -201,8 +196,43 @@
         </div>
         <!-- END FOOTER -->
 
-        <!-- SCRIPT OWL SLIDER -->
+        <!-- SCRIPT -->
         <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("tiny-img");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+        </script>
+        <!-- END SCRIPT -->
+
+        <!-- SCRIPT OWL SLIDER -->
         <script src="owlcarousel/owl.carousel.min.js"></script>
         <script>
             $('.owl-carousel').owlCarousel({
@@ -224,8 +254,8 @@
             })
         </script>
         <!-- END SCRIPT OWL SLIDER -->
-    </div>
 
+    </div>
 
 </body>
 

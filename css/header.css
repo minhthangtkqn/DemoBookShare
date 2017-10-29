@@ -1,0 +1,48 @@
+#header {
+    /*	padding: 10px 0 10px 0;*/
+/*    border-bottom: 1px solid #8c8c8c;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6ea001;
+}
+
+.logo {
+    display: inline-block;
+    width: 260px;
+    height: 80px;
+}
+
+#credentials {
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    float: right;
+}
+
+#credentials ul {
+    list-style-type: none;
+}
+
+#credentials ul li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+#credentials a:VISITED,
+a:LINK {
+    color: white;
+    text-decoration-line: none;
+    font-weight: bold;
+    cursor: auto;
+}
+
+#credentials a:link:active,
+a:visited:active {
+    color: #52555b;
+}
+
+#credentials a:HOVER {
+    color: white;
+    text-decoration: underline;
+}

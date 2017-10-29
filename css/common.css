@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+/*     	background-color: #fff8d8; */
+}
+
+.container {
+    display: block;
+    width: 1220px;
+    height: auto;
+    margin: auto;
+}
+#page{
+    margin-top: 0px;
+    background-color: #f4f4f4;
+}
